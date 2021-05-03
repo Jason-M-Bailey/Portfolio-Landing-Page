@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary: rgba(39, 42, 131, 1);
   --secondary: rgb(194, 240, 253);
@@ -41,6 +45,10 @@ header {
   align-items: center;
   background-color: var(--tertiary);
   box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+  transition: top 1.5s;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 header h1 {
