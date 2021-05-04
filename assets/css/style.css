@@ -184,7 +184,7 @@ main {
 }
 
 .flex-item:last-child {
-  min-height: 250px;
+  min-height: 300px;
   flex-basis: 100%;
 }
 
@@ -231,13 +231,17 @@ main {
 
 /* add remaining portfolio images */
 .css-1 {
-  background-image: url("/assets/images/CSS-Challenge-Day-1.jpg");
+  background-image: url("/assets/images/css-day-1-animation.gif");
 }
 .css-snippets {
   background-image: url("/assets/images/css-snippets.jpg");
 }
 .css-2 {
-  background-image: url("/assets/images/CSS-Challenge-Day-2.jpg");
+  background-image: url("/assets/images/css-day-2-animation.gif");
+}
+
+.css-3 {
+  background-image: url("/assets/images/css-day-3-animation.gif");
 }
 
 @media screen and (max-width: 980px) {
