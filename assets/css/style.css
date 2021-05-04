@@ -99,7 +99,7 @@ main {
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
-  min-height: 30vh;
+  min-height: 60vh;
   color: var(--light);
   padding: 2% 6%;
   display: flex;
