@@ -244,6 +244,10 @@ main {
   background-image: url("../images/css-day-3-animation.gif");
 }
 
+.css-4 {
+  background-image: url("../images/CSS-Challenge-Day-4.jpg");
+}
+
 @media screen and (max-width: 980px) {
   header {
     padding: 0 0 10px 0;
