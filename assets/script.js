@@ -1,3 +1,5 @@
+// hides header and navbar on scroll down, shows on scroll up
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;

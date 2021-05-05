@@ -6,13 +6,14 @@ html {
   scroll-behavior: smooth;
 }
 
+
 /* set the palette */
 :root {
   --primary: rgba(39, 42, 131, 1);
   --secondary: rgb(194, 240, 253);
   --tertiary: rgba(39, 42, 131, 1);
   --dark: rgba(28, 29, 33, 1);
-  --light: rgba(238, 238, 247, 1);
+  --light: rgb(137, 137, 145);
 }
 
 body {
@@ -44,7 +45,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-color: var(--tertiary);
+  background-color: var(--primary);
   box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
   /* hide on scroll down, show on scroll up */
   transition: top 1.5s;
@@ -97,7 +98,7 @@ main {
 }
 
 .hero-banner {
-  background: rgb(68, 88, 120);
+  background: var(--primary);
   background-image: url("../images/lines-of-code.jpeg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
   background-size: cover;
   background-position: center;
@@ -153,7 +154,8 @@ main {
     padding-bottom: 10px;
     text-align: right;
     font-size: 7vw;
-  } 
+  }
+
 
 /* use this if you want the h2 tags to be in their own left column 
 .page-section > h2 {
@@ -180,7 +182,7 @@ main {
 }
 
 .flex-item {
-  border: 5px solid var(--secondary);
+  border: 2px solid var(--secondary);
   background-color: var(--primary);
   color: var(--tertiary);
   height: 200px;
@@ -222,6 +224,35 @@ main {
   font-size: 1.6rem;
 }
 
+/* project images section */
+
+.flex-project-images {
+  border: 2px solid var(--secondary);
+  background-color: var(--primary);
+  color: var(--tertiary);
+  height: 300px;
+  flex-basis: calc(33% - 1em);
+  display: flex;
+  align-items:flex-start;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-size: 105%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+
+.flex-project-images div {
+  background-color: var(--secondary);
+  padding: 8px 10px;
+}
+
+.flex-project-images h3 {
+  font-size: 1.2rem;
+}
+
+/* contact section */
+
 .contact address {
   display: flex;
   flex-wrap: wrap;
@@ -252,17 +283,17 @@ main {
 
 /* add remaining portfolio images */
 .css-1 {
-  background-image: url("../images/css-day-1-animation.gif");
+  background-image: url("../images/css-day-1-animation-square.gif");
 }
 .css-snippets {
   background-image: url("../images/css-snippets.jpg");
 }
 .css-2 {
-  background-image: url("../images/css-day-2-animation.gif");
+  background-image: url("../images/css-day-2-animation-square.gif");
 }
 
 .css-3 {
-  background-image: url("../images/css-day-3-animation.gif");
+  background-image: url("../images/css-day-3-animation-square.gif");
 }
 
 .css-4 {
@@ -315,6 +346,7 @@ main {
 
 @media screen and (max-width: 768px) {
   .flex-item,
+  .flex-project-images,
   .flex-item:first-child,
   .flex-item:last-child {
     flex-basis: 100%;
@@ -329,5 +361,8 @@ main {
   .contact address {
     flex-direction: column;
     align-items: flex-end;
+  }
+  .nav a {
+    font-size: 0.8rem;
   }
 }
