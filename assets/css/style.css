@@ -95,7 +95,7 @@ main {
 
 .hero-banner {
   background: rgb(68, 88, 120);
-  background-image: url("/assets/images/lines-of-code.jpeg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background-image: url("../images/lines-of-code.jpeg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
@@ -231,17 +231,17 @@ main {
 
 /* add remaining portfolio images */
 .css-1 {
-  background-image: url("/assets/images/css-day-1-animation.gif");
+  background-image: url("../images/css-day-1-animation.gif");
 }
 .css-snippets {
-  background-image: url("/assets/images/css-snippets.jpg");
+  background-image: url("../images/css-snippets.jpg");
 }
 .css-2 {
-  background-image: url("/assets/images/css-day-2-animation.gif");
+  background-image: url("../images/css-day-2-animation.gif");
 }
 
 .css-3 {
-  background-image: url("/assets/images/css-day-3-animation.gif");
+  background-image: url("../images/css-day-3-animation.gif");
 }
 
 @media screen and (max-width: 980px) {
