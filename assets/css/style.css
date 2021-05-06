@@ -217,28 +217,10 @@ main {
   font-size: 1.6rem;
 }
 
-/* bookmarks section */
-/*.bookmarks {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 80%;
-  padding: 1rem;
-  list-style: none;
-  font-size: 25px;
-  line-height: 200%;
-}
-
-.bookmarks a:hover {
-  background-size: 100% 90%;
-  color: var(--secondary);
-}
-*/
-
 .bookmarks address {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 100%;
 }
@@ -256,6 +238,7 @@ main {
   transition: all 0.25s ease-in;
   margin: 0 0.2rem 0.1rem;
   display: inline-block;
+  font-family: tahoma;
 }
 
 .bookmarks address a:hover {
@@ -321,24 +304,24 @@ main {
 }
 
 /* add remaining portfolio images */
-.css-1 {
-  background-image: url("../images/css-day-1-animation-square.gif");
-}
 .css-snippets {
   background-image: url("../images/css-snippets.jpg");
+}
+.css-1 {
+  background-image: url("../images/css-day-1-animation-square.gif");
 }
 .css-2 {
   background-image: url("../images/css-day-2-animation-square.gif");
 }
-
 .css-3 {
   background-image: url("../images/css-day-3-animation-square.gif");
 }
-
 .css-4 {
   background-image: url("../images/CSS-Challenge-Day-4.jpg");
 }
-
+.css-5 {
+  background-image: url("../images/CSS-Challenge-Day-5.jpg");
+}
 .homework-01 {
   background-image: url("../images/homework-01.jpg");
 }
