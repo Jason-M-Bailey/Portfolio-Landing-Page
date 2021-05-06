@@ -6,7 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 /* set the palette */
 :root {
   --primary: rgba(39, 42, 131, 1);
@@ -16,27 +15,20 @@ html {
   --light: rgb(137, 137, 145);
 }
 
+/* what of this can I remove since I have the reset loaded? */
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: var(--primary);
   background-color: var(--light);
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
+/* what of this can I remove since I have the reset loaded? */
 p {
   margin: 0;
 }
+
+/* please explain the concept of setting the viewport to 62.5% and using rem */
 
 header {
   padding: 15px 6% 15px 0;
@@ -74,7 +66,7 @@ nav a {
   padding: 5px 10px;
   color: var(--secondary);
   margin-right: 10px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   /* allows :hover to transition background to cover the text */
   background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
   background-repeat: no-repeat;
@@ -104,7 +96,7 @@ main {
   background-position: center;
   /* blends background image and gradient */
   background-blend-mode: soft-light; 
-  min-height: 30vh;
+  min-height: 50vh;
   color: var(--light);
   padding: 2% 6%;
   display: flex;
@@ -173,6 +165,7 @@ main {
 
 .page-section p {
   margin-bottom: 20px;
+  font-size: 3vh;
 }
 
 .flex-container {
@@ -224,13 +217,59 @@ main {
   font-size: 1.6rem;
 }
 
-/* project images section */
+/* bookmarks section */
+/*.bookmarks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  padding: 1rem;
+  list-style: none;
+  font-size: 25px;
+  line-height: 200%;
+}
 
+.bookmarks a:hover {
+  background-size: 100% 90%;
+  color: var(--secondary);
+}
+*/
+
+.bookmarks address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.bookmarks address a {
+  color: var(--tertiary);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-style: normal;
+  background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  margin: 0 0.2rem 0.1rem;
+  display: inline-block;
+}
+
+.bookmarks address a:hover {
+  background-size: 100% 90%;
+  color: var(--secondary);
+}
+
+/* project images section */
 .flex-project-images {
   border: 2px solid var(--secondary);
   background-color: var(--primary);
   color: var(--tertiary);
-  height: 300px;
+  height: 180px;
+  width: 180px;
   flex-basis: calc(33% - 1em);
   display: flex;
   align-items:flex-start;
@@ -240,6 +279,7 @@ main {
   background-size: 105%;
   transition: all 0.5s;
   font-size: 0.9rem;
+  background-repeat: no-repeat;
 }
 
 .flex-project-images div {
@@ -252,7 +292,6 @@ main {
 }
 
 /* contact section */
-
 .contact address {
   display: flex;
   flex-wrap: wrap;
@@ -308,6 +347,7 @@ main {
   background-image: url("../images/jacob-collier-wallpaper.jpg");
 }
 
+/* media breakpoints */
 @media screen and (max-width: 1300px) {
   .flex-item {
     flex-basis: calc(50% - 1em);
@@ -364,5 +404,8 @@ main {
   }
   .nav a {
     font-size: 0.8rem;
+  }
+  .page-section > h2 {
+    font-size: 30pt;
   }
 }
