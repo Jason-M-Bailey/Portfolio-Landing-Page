@@ -148,24 +148,23 @@ main {
     font-size: 7vw;
   }
 
-
-/* use this if you want the h2 tags to be in their own left column 
 .page-section > h2 {
   flex: 0 0 20%;
   text-align: right;
   padding-right: 15px;
   border-right: 4px solid var(--primary); 
-  font-size: 4vw;
+  border-bottom: none;
+  font-size: 3vw;
   line-height: 1.1;
 }
 
 .page-section > div {
   flex: 0 0 77%;
-} */
+}
 
 .page-section p {
   margin-bottom: 20px;
-  font-size: 3vh;
+  font-size: 2vh;
 }
 
 .flex-container {
@@ -174,12 +173,65 @@ main {
   justify-content: center;
 }
 
-.flex-item {
+.flex-item-portfolio {
+  border: 2px solid var(--secondary);
+  background-color: var(--primary);
+  color: var(--tertiary);
+  height: 350px;
+  /* 1 column */
+  flex-basis: calc(100% - 1em);
+  /* 2 columns 
+  flex-basis: calc(50% - 1em);  */
+  /* 3 columns */
+  /*
+  flex-basis: calc(33% - 1em); */
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 100%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+
+.flex-item-projects {
   border: 2px solid var(--secondary);
   background-color: var(--primary);
   color: var(--tertiary);
   height: 200px;
-  /* 2 columns
+  /* 1 column 
+  flex-basis: calc(100% - 1em); */
+  /* 2 columns */
+  flex-basis: calc(50% - 1em);
+  /* 3 columns */
+  /*
+  flex-basis: calc(33% - 1em); */
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 100%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+
+.flex-item-projects:first-child {
+  min-height: 300px;
+  flex-basis: 100%;
+}
+
+.flex-item-bookmarks {
+  border: 2px solid var(--secondary);
+  background-color: var(--primary);
+  color: var(--tertiary);
+  height: 100px;
+  /* 1 column 
+  flex-basis: calc(100% - 1em); */
+  /* 2 columns 
   flex-basis: calc(50% - 1em); */
   /* 3 columns */
   flex-basis: calc(33% - 1em);
@@ -194,6 +246,7 @@ main {
   font-size: 0.9rem;
 }
 
+/* when you want the first and last child sizing to be unique 
 .flex-item:first-child {
   min-height: 400px;
   flex-basis: 100%;
@@ -203,19 +256,48 @@ main {
   min-height: 350px;
   flex-basis: 100%;
 }
+*/
 
-.flex-item:hover {
+/* how to combine this section? */
+.flex-item-portfolio:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.flex-item div {
+.flex-item-portfolio div {
   background-color: var(--secondary);
   padding: 8px 10px;
 }
 
-.flex-item h3 {
-  font-size: 1.6rem;
+.flex-item-portfolio h3 {
+  font-size: 2rem;
 }
+
+.flex-item-projects:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.flex-item-projects div {
+  background-color: var(--secondary);
+  padding: 8px 10px;
+}
+
+.flex-item-projects h3 {
+  font-size: 1.7rem;
+}
+
+.flex-item-bookmarks:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.flex-item-bookmarks div {
+  background-color: var(--secondary);
+  padding: 8px 10px;
+}
+
+.flex-item-bookmarks h3 {
+  font-size: 1rem;
+}
+
 
 .bookmarks address {
   display: flex;
@@ -371,7 +453,8 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  .flex-item,
+  .flex-item-portfolio,
+  .flex-item-projects,
   .flex-project-images,
   .flex-item:first-child,
   .flex-item:last-child {
@@ -393,5 +476,9 @@ main {
   }
   .page-section > h2 {
     font-size: 30pt;
+  }
+  .flex-item-bookmarks {
+    flex-basis: calc(50% - 1em);
+    height: 75px;
   }
 }
