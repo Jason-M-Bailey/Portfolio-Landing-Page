@@ -178,13 +178,7 @@ main {
   background-color: var(--primary);
   color: var(--tertiary);
   height: 350px;
-  /* 1 column */
   flex-basis: calc(100% - 1em);
-  /* 2 columns 
-  flex-basis: calc(50% - 1em);  */
-  /* 3 columns */
-  /*
-  flex-basis: calc(33% - 1em); */
   display: flex;
   align-items: flex-end;
   padding: 0 0 20px 0;
@@ -202,13 +196,7 @@ main {
   background-color: var(--primary);
   color: var(--tertiary);
   height: 200px;
-  /* 1 column 
-  flex-basis: calc(100% - 1em); */
-  /* 2 columns */
   flex-basis: calc(50% - 1em);
-  /* 3 columns */
-  /*
-  flex-basis: calc(33% - 1em); */
   display: flex;
   align-items: flex-end;
   padding: 0 0 20px 0;
@@ -221,7 +209,6 @@ main {
   border-radius: 5px;
 }
 
-/* code to check if there is an odd number, if so then make the first child width 100% */
 .flex-item-projects:first-child {
   min-height: 300px;
   flex-basis: 100%;
@@ -232,11 +219,6 @@ main {
   background-color: var(--primary);
   color: var(--tertiary);
   height: 100px;
-  /* 1 column 
-  flex-basis: calc(100% - 1em); */
-  /* 2 columns 
-  flex-basis: calc(50% - 1em); */
-  /* 3 columns */
   flex-basis: calc(33% - 1em);
   display: flex;
   align-items: flex-end;
@@ -249,18 +231,6 @@ main {
   font-size: 0.9rem;
   border-radius: 3px;
 }
-
-/* when you want the first and last child sizing to be unique 
-.flex-item:first-child {
-  min-height: 400px;
-  flex-basis: 100%;
-}
-
-.flex-item:last-child {
-  min-height: 350px;
-  flex-basis: 100%;
-}
-*/
 
 /* how to combine this section? */
 .flex-item-portfolio:hover {
@@ -399,11 +369,29 @@ main {
 .freecodecamp {
   background-image: url("../images/freecodecamp.png");
 }
+.github {
+  background-image: url("../images/github.png");
+}
 .homework-01 {
   background-image: url("../images/homework-01.jpg");
 }
 .jacob-collier {
   background-image: url("../images/jacob-collier-wallpaper.jpg");
+}
+.mosh {
+  background-image: url("../images/programming-with-mosh.jpg");
+}
+.stack-overflow {
+  background-image: url("../images/stack-overflow.jpg");
+}
+.traversy-media {
+  background-image: url("../images/traversy-media.jpg");
+}
+.web-dev-simplified {
+  background-image: url("../images/web-dev-simplified.jpg");
+}
+.w3-schools {
+  background-image: url("../images/w3-schools.png");
 }
 
 /* media breakpoints */
@@ -487,22 +475,22 @@ main {
 
 #myImg:hover {opacity: 0.7;}
 
-/* The Modal (background) */
+/* modal (the background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none; /* hidden by default */
+  position: fixed; /* stays in place */
+  z-index: 1; /* sit on top */
+  padding-top: 100px; /* define location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  width: 100%; /* full width */
+  height: 100%; /* full height */
+  overflow: auto; /* enable scroll if needed */
+  background-color: rgb(0,0,0); /* fallback color */
+  background-color: rgba(0,0,0,0.9); /* black w/ opacity */
 }
 
-/* Modal Content (image) */
+/* modal content (the image) */
 .modal-content {
   margin: auto;
   display: block;
@@ -510,7 +498,7 @@ main {
   max-width: 700px;
 }
 
-/* Caption of Modal Image */
+/* caption of the modal image */
 #caption {
   margin: auto;
   display: block;
@@ -522,7 +510,7 @@ main {
   height: 150px;
 }
 
-/* Add Animation */
+/* add some animation */
 .modal-content, #caption {  
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
@@ -540,7 +528,7 @@ main {
   to {transform:scale(1)}
 }
 
-/* The Close Button */
+/* close button */
 .close {
   position: absolute;
   top: 15px;
@@ -558,7 +546,7 @@ main {
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
+/* 100% image width on smaller screens */
 @media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
