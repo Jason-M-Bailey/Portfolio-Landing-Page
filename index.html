@@ -36,67 +36,66 @@
         <p>Through the first 3 weeks of the bootcamp, we have focused on HTML, CSS & Javascript. The 24 week course covers a number of topics and my portfolio will be continually updated to reflect these new subjects. Below are a sampling of projects I have worked on indepedently, bootcamp projects and a compilation of my most used resources.</p>
         <p>I am happily married with 6 year old twin girls, Margot and Renee. My wife and I love to travel, from beaches to mountains to Europe and Central America. My daughters love ballet, tumbling, soccer and anything My Little Pony!</p>
       </div>
-<!--    </section> -->
+    </section>
     
     <!-- light box section start -->
-      <!-- <section class="page-section" id="family-pics">
-        <h2>/me and the family</h2> -->
-        <!-- Here is your access point for your user, a preview of the images you wish to display. You use the onclick="" event handler to execute the methods you will define in the JavaScript near the bottom -->
-        
-        <div class="row">
-          <div class="col">
-              <img src="../../Desktop/02 Homework/assets/images/bailey01-square.jpg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Bailey family at the USWNT game"/>
+    <section class="page-section">
+      <h2>/me and the family</h2>
+        <!-- preview of the images you wish to display -->
+      <div class="row">
+        <div class="col">
+            <img src="../../Desktop/02 Homework/assets/images/bailey01-square.jpg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Bailey family at the USWNT game"/>
+        </div>
+        <div class="col">
+            <img src="../../Desktop/02 Homework/assets/images/bailey02-square.jpg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Bailey family at the beach"/>
+        </div>
+        <div class="col">
+            <img src="../../Desktop/02 Homework/assets/images/bailey03-square.jpg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Jason and Amanda at a wedding"/>
+        </div>
+        <div class="col">
+            <img src="../../Desktop/02 Homework/assets/images/bailey04-square.jpg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Bailey family on vacation in Asheville, NC"/>
+        </div>
+      </div>
+      
+      <!-- this is the lightbox, contained in a modal. provide all the images, controls, and another set of preview images as the dots. dots show your user which image is currently active. -->
+      <div id="Lightbox" class="modal">
+        <span class="close pointer" onclick="closeLightbox()">&times;</span>
+        <div class="modal-content">
+          <div class="slide">
+            <img src="../../Desktop/02 Homework/assets/images/bailey01-square.jpg" class="image-slide" alt="Bailey family at the USWNT game"/>
           </div>
-          <div class="col">
-              <img src="../../Desktop/02 Homework/assets/images/bailey02-square.jpg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Bailey family at the beach"/>
+          <div class="slide">
+            <img src="../../Desktop/02 Homework/assets/images/bailey02-square.jpg" class="image-slide" alt="Bailey family at the beach"/>
           </div>
-          <div class="col">
-              <img src="../../Desktop/02 Homework/assets/images/bailey03-square.jpg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Jason and Amanda at a wedding"/>
+          <div class="slide">
+            <img src="../../Desktop/02 Homework/assets/images/bailey03-square.jpg" class="image-slide" alt="Jason and Amanda at a wedding"/>
           </div>
-          <div class="col">
-              <img src="../../Desktop/02 Homework/assets/images/bailey04-square.jpg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Bailey family on vacation in Asheville, NC"/>
+          <div class="slide">
+            <img src="../../Desktop/02 Homework/assets/images/bailey04-square.jpg" class="image-slide" alt="Bailey family on vacation in Asheville, NC"/>
+          </div>
+          <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+          <div class="dots">
+            <div class="col">
+              <img src="../../Desktop/02 Homework/assets/images/bailey01-square.jpg" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Bailey family at the USWNT game"/>
+            </div>
+            <div class="col">
+              <img src="../../Desktop/02 Homework/assets/images/bailey02-square.jpg" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="Bailey family at the beach"/>
+            </div>
+            <div class="col">
+              <img src="../../Desktop/02 Homework/assets/images/bailey03-square.jpg" class="modal-preview hover-shadow" onclick="toSlide(3)" alt="Jason and Amanda at a wedding"/>
+            </div>
+            <div class="col">
+              <img src="../../Desktop/02 Homework/assets/images/bailey04-square.jpg" class="modal-preview hover-shadow" onclick="toSlide(4)" alt="Bailey family on vacation in Asheville, NC"/>
+            </div>
+            </div>
           </div>
         </div>
-          <!-- This is your lightbox, it is contained in a modal. Here you provide all the images, controls, and another set of preview images as the dots. Dots show your user which image is currently active. Note that you use entities (e.g. &times;), more info on them at the bottom. -->
-                 
-        <div id="Lightbox" class="modal">
-          <span class="close pointer" onclick="closeLightbox()">&times;</span>
-          <div class="modal-content">
-            <div class="slide">
-              <img src="../../Desktop/02 Homework/assets/images/bailey01-square.jpg" class="image-slide" alt="Bailey family at the USWNT game"/>
-            </div>
-            <div class="slide">
-              <img src="../../Desktop/02 Homework/assets/images/bailey02-square.jpg" class="image-slide" alt="Bailey family at the beach"/>
-            </div>
-            <div class="slide">
-              <img src="../../Desktop/02 Homework/assets/images/bailey03-square.jpg" class="image-slide" alt="Jason and Amanda at a wedding"/>
-            </div>
-            <div class="slide">
-              <img src="../../Desktop/02 Homework/assets/images/bailey04-square.jpg" class="image-slide" alt="Bailey family on vacation in Asheville, NC"/>
-            </div>
-            <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
-            <a class="next" onclick="changeSlide(1)">&#10095;</a>
-            <div class="dots">
-              <div class="col">
-                <img src="../../Desktop/02 Homework/assets/images/bailey01-square.jpg" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Bailey family at the USWNT game"/>
-              </div>
-              <div class="col">
-                <img src="../../Desktop/02 Homework/assets/images/bailey02-square.jpg" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="Bailey family at the beach"/>
-              </div>
-              <div class="col">
-                <img src="../../Desktop/02 Homework/assets/images/bailey03-square.jpg" class="modal-preview hover-shadow" onclick="toSlide(3)" alt="Jason and Amanda at a wedding"/>
-              </div>
-              <div class="col">
-                <img src="../../Desktop/02 Homework/assets/images/bailey04-square.jpg" class="modal-preview hover-shadow" onclick="toSlide(4)" alt="Bailey family on vacation in Asheville, NC"/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div> 
+    </section>
     <!-- light box section end -->  
 
-
-    <!-- Projects section -->
+    <!-- projects section -->
     <section class="page-section" id="projects">
       <h2>/projects</h2>
       <div class="flex-container">
@@ -145,7 +144,7 @@
       </div>
     </section>
 
-    <!-- Bootcamp section -->
+    <!-- bootcamp section -->
     <section class="page-section" id="bootcamp">
       <h2>/bootcamp</h2>
       <div class="flex-container">
@@ -168,76 +167,76 @@
           </div>
         </a>
       </div>
-      </section>
+    </section>
 
-      <!-- Bookmarks section -->
-      <section class="page-section" id="bookmarks">
-        <h2>/bookmarks</h2>
-        <div class="flex-container">
-          <a href="https://100dayscss.com/" target="_blank" class="flex-item-bookmarks days100">
-            <div>
-              <h3>100 Days of CSS</h3>
-            </div>
-          </a>
-          <a href="https://www.codecademy.com/" target="_blank" class="flex-item-bookmarks codecademy">
-            <div>
-              <h3>codecademy</h3> 
-            </div>
-          </a>
-          <a href="https://html-css-js.com/css/generator/border-outline/" target="_blank" class="flex-item-bookmarks css-border-generator">
-            <div>
-              <h3>CSS Border Generator</h3>
-            </div>
-          </a>
-          <a href="https://css-tricks.com/" target="_blank" class="flex-item-bookmarks css-tricks">
-            <div>
-              <h3>CSS Tricks</h3>
-            </div>
-          </a>
-          <a href="https://flatuicolors.com/" target="_blank" class="flex-item-bookmarks flat-ui">
-            <div>
-              <h3>Flat UI Palettes</h3>
-            </div>
-          </a>
-          <a href="https://www.freecodecamp.org/learn" target="_blank" class="flex-item-bookmarks freecodecamp">
-            <div>
-              <h3>freeCodeCamp</h3>
-            </div>
-          </a>
-          <a href="https://github.com/" target="_blank" class="flex-item-bookmarks github">
-            <div>
-              <h3>GitHub</h3>
-            </div>
-          </a>
-          <a href="https://www.youtube.com/channel/UCWv7vMbMWH4-V0ZXdmDpPBA" target="_blank" class="flex-item-bookmarks mosh">
-            <div>
-              <h3>Programming with Mosh</h3>
-            </div>
-          </a>
-          <a href="https://stackoverflow.com/" target="_blank" class="flex-item-bookmarks stack-overflow">
-            <div>
-              <h3>Stack Overflow</h3>
-            </div>
-          </a>
-          <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" target="_blank" class="flex-item-bookmarks traversy-media">
-            <div>
-              <h3>Traversy Media</h3>
-            </div>
-          </a>
-          <a href="https://www.w3schools.com/" target="_blank" class="flex-item-bookmarks w3-schools">
-            <div>
-              <h3>W3 Schools</h3>
-            </div>
-          </a>
-          <a href="https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw" target="_blank"  class="flex-item-bookmarks web-dev-simplified">
-            <div>
-              <h3>Web Dev Simplified</h3>
-            </div>
-          </a>
-        </div>
-      </section>
+    <!-- Bookmarks section -->
+    <section class="page-section" id="bookmarks">
+      <h2>/bookmarks</h2>
+      <div class="flex-container">
+        <a href="https://100dayscss.com/" target="_blank" class="flex-item-bookmarks days100">
+          <div>
+            <h3>100 Days of CSS</h3>
+          </div>
+        </a>
+        <a href="https://www.codecademy.com/" target="_blank" class="flex-item-bookmarks codecademy">
+          <div>
+            <h3>codecademy</h3> 
+          </div>
+        </a>
+        <a href="https://html-css-js.com/css/generator/border-outline/" target="_blank" class="flex-item-bookmarks css-border-generator">
+          <div>
+            <h3>CSS Border Generator</h3>
+          </div>
+        </a>
+        <a href="https://css-tricks.com/" target="_blank" class="flex-item-bookmarks css-tricks">
+          <div>
+            <h3>CSS Tricks</h3>
+          </div>
+        </a>
+        <a href="https://flatuicolors.com/" target="_blank" class="flex-item-bookmarks flat-ui">
+          <div>
+            <h3>Flat UI Palettes</h3>
+          </div>
+        </a>
+        <a href="https://www.freecodecamp.org/learn" target="_blank" class="flex-item-bookmarks freecodecamp">
+          <div>
+            <h3>freeCodeCamp</h3>
+          </div>
+        </a>
+        <a href="https://github.com/" target="_blank" class="flex-item-bookmarks github">
+          <div>
+            <h3>GitHub</h3>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/channel/UCWv7vMbMWH4-V0ZXdmDpPBA" target="_blank" class="flex-item-bookmarks mosh">
+          <div>
+            <h3>Programming with Mosh</h3>
+          </div>
+        </a>
+        <a href="https://stackoverflow.com/" target="_blank" class="flex-item-bookmarks stack-overflow">
+          <div>
+            <h3>Stack Overflow</h3>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" target="_blank" class="flex-item-bookmarks traversy-media">
+          <div>
+            <h3>Traversy Media</h3>
+          </div>
+        </a>
+        <a href="https://www.w3schools.com/" target="_blank" class="flex-item-bookmarks w3-schools">
+          <div>
+            <h3>W3 Schools</h3>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw" target="_blank"  class="flex-item-bookmarks web-dev-simplified">
+          <div>
+            <h3>Web Dev Simplified</h3>
+          </div>
+        </a>
+      </div>
+    </section>
         
-      <!-- Contact section -->
+    <!-- contact section -->
     <section class="page-section contact" id="contact">
       <h2>/contact</h2>
       <div>

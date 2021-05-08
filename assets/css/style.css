@@ -480,7 +480,7 @@ main {
   width: 25%;
 }
 
-/* Now you want to define what the lightbox will look like. Note that you have the display as none. You don't want it to show until the user clicks on one of the previews. You will change this display property with JavaScript below. */
+/* define what the lightbox will look like. display: none; - do not show until the user clicks on one of the previews. */
    
 .modal {
   display: none;
@@ -506,7 +506,7 @@ main {
   max-width: 450px;
 }
 
-/* Same with your slides, you set the display to none, because you want to choose which one is shown at a time. */
+/* set the display to none, you want to choose which one is shown at a time. */
 
 .slide {
   display: none;
@@ -526,10 +526,7 @@ main {
   justify-content: space-between;
 }
 
-/* You want the previews a little transparent to show that they are "inactive". 
-   You then add an .active or :hover class to animate the selections for your user when
-   they interact with your controls and clickable content.
- */
+/* make previews a little transparent to show that they are "inactive". then add an .active or :hover class to animate the selections for your user when they interact with your controls and clickable content. */
 
 img.preview, img.modal-preview {
   opacity: 0.6;
