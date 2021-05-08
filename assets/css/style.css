@@ -143,6 +143,20 @@ main {
   }
 
 .page-section > h2 {
+  border-right: none;
+  border-bottom: 4px solid var(--primary);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  text-align: right;
+  font-size: 4vw;
+}
+
+.page-section > div {
+  flex: 0 0 100%;
+}
+
+/* if you want h2 tags on the left column
+.page-section > h2 {
   flex: 0 0 20%;
   text-align: right;
   padding-right: 15px;
@@ -151,10 +165,10 @@ main {
   font-size: 3vw;
   line-height: 1.1;
 }
-
 .page-section > div {
   flex: 0 0 77%;
 }
+*/
 
 .page-section p {
   margin-bottom: 20px;
@@ -204,7 +218,7 @@ main {
   transition: all 0.5s;
   border-radius: 5px;
   font-size: 0.9rem;
-  height: 200px; /* different v other flex-item sections */
+  height: 230px; /* different v other flex-item sections */
   flex-basis: calc(100% - 1em); /* different v other flex-item sections */
 }
 
@@ -223,13 +237,13 @@ main {
   border-radius: 5px;
   font-size: 0.9rem;
   height: 100px; /* different v other flex-item sections */
-  flex-basis: calc(33% - 1em); /* different v other flex-item sections */
+  flex-basis: calc(25% - 1em); /* different v other flex-item sections */
 }
 
 /* how to combine this section? */
 .flex-item-bootcamp:hover {
   background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px 0px 8px black, 0 0 15px black;
+  box-shadow: inset 0px 0px 8px black, 0 0 30px black;
 }
 
 .flex-item-bootcamp div {
@@ -243,7 +257,7 @@ main {
 
 .flex-item-projects:hover {
   background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px 0px 8px black, 0 0 15px black;
+  box-shadow: inset 0px 0px 8px black, 0 0 30px black;
 }
 
 .flex-item-projects div {
@@ -257,7 +271,7 @@ main {
 
 .flex-item-bookmarks:hover {
   background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px 0px 8px black, 0 0 15px black;
+  box-shadow: inset 0px 0px 8px black, 0 0 30px black;
 }
 
 .flex-item-bookmarks div {
@@ -384,7 +398,7 @@ main {
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
-    font-size: 10vw;
+    font-size: 6vw;
   }
   header nav {
     justify-content: center;
@@ -399,10 +413,13 @@ main {
     margin-bottom: 20px;
     padding-bottom: 10px;
     text-align: center;
-    font-size: 7vw;
+    font-size: 5vw;
   }
   .flex-item-projects {
     flex-basis: calc(50% - 1em);
+  }
+  .flex-item-bookmarks {
+    flex-basis: calc(33% - 1em);
   }
 }
 
@@ -461,7 +478,7 @@ main {
 
 #myImg:hover {
   opacity: 0.7;
-  box-shadow: inset 0px 0px 8px black, 0 0 15px black;
+  box-shadow: inset 0px 0px 8px black, 0 0 30px black;
 }
 
 /* modal (the background) */
