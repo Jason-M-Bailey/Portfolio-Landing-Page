@@ -17,17 +17,11 @@ html {
 
 /* is there a way to make all a href tags use target:"_blank" */
 
-/* what of this can I remove since I have the reset loaded? */
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: var(--primary);
   background-color: var(--light);
   line-height: 1.5;
-}
-
-/* what of this can I remove since I have the reset loaded? */
-p {
-  margin: 0;
 }
 
 header {
@@ -51,7 +45,7 @@ header h1 {
   background-color: var(--secondary);
   padding: 5px 1% 5px 6%;
   margin: 0;
-  font-size: 4vw;
+  font-size: 3vw;
   line-height: 1;
 }
 
@@ -110,8 +104,8 @@ main {
 }
 
 .hero-banner h2 {
-  background-color: var(--secondary);
-  color: var(--tertiary);
+  background-color: var(--primary);
+  color: var(--secondary);
   margin: 0;
   padding: 5px 10px;
   font-size: 2.3rem;
@@ -173,30 +167,10 @@ main {
   justify-content: center;
 }
 
-.flex-item-portfolio {
-  border: 3px solid white;
-  background-color: var(--primary);
-  color: var(--tertiary);
-  height: 350px;
-  flex-basis: calc(100% - 1em);
-  display: flex;
-  align-items: flex-end;
-  padding: 0 0 20px 0;
-  margin: 0.5em;
-  text-decoration: none;
-  background-blend-mode: soft-light;
-  background-size: 100%;
-  transition: all 0.5s;
-  font-size: 0.9rem;
-  border-radius: 5px;
-}
-
 .flex-item-projects {
   border: 2px solid white;
   background-color: var(--primary);
   color: var(--tertiary);
-  height: 200px;
-  flex-basis: calc(50% - 1em);
   display: flex;
   align-items: flex-end;
   padding: 0 0 20px 0;
@@ -205,8 +179,10 @@ main {
   background-blend-mode: soft-light;
   background-size: 100%;
   transition: all 0.5s;
-  font-size: 0.9rem;
   border-radius: 5px;
+  font-size: 0.9rem;
+  height: 200px; /* different v other flex-item sections */
+  flex-basis: calc(50% - 1em); /* different v other flex-item sections */
 }
 
 .flex-item-projects:first-child {
@@ -214,12 +190,10 @@ main {
   flex-basis: 100%;
 }
 
-.flex-item-bookmarks {
-  border: 1px solid white;
+.flex-item-portfolio {
+  border: 3px solid white;
   background-color: var(--primary);
   color: var(--tertiary);
-  height: 100px;
-  flex-basis: calc(33% - 1em);
   display: flex;
   align-items: flex-end;
   padding: 0 0 20px 0;
@@ -228,8 +202,28 @@ main {
   background-blend-mode: soft-light;
   background-size: 100%;
   transition: all 0.5s;
+  border-radius: 5px;
   font-size: 0.9rem;
-  border-radius: 3px;
+  height: 350px; /* different v other flex-item sections */
+  flex-basis: calc(100% - 1em); /* different v other flex-item sections */
+}
+
+.flex-item-bookmarks {
+  border: 1px solid white;
+  background-color: var(--primary);
+  color: var(--tertiary);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 100%;
+  transition: all 0.5s;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  height: 100px; /* different v other flex-item sections */
+  flex-basis: calc(33% - 1em); /* different v other flex-item sections */
 }
 
 /* how to combine this section? */
@@ -270,34 +264,6 @@ main {
 
 .flex-item-bookmarks h3 {
   font-size: 1rem;
-}
-
-/* project images section */
-.flex-project-images {
-  border: 2px solid var(--secondary);
-  background-color: var(--primary);
-  color: var(--tertiary);
-  height: 180px;
-  width: 180px;
-  flex-basis: calc(33% - 1em);
-  display: flex;
-  align-items:flex-start;
-  padding: 0 0 20px 0;
-  margin: 0.5em;
-  text-decoration: none;
-  background-size: 105%;
-  transition: all 0.5s;
-  font-size: 0.9rem;
-  background-repeat: no-repeat;
-}
-
-.flex-project-images div {
-  background-color: var(--secondary);
-  padding: 8px 10px;
-}
-
-.flex-project-images h3 {
-  font-size: 1.2rem;
 }
 
 /* contact section */
@@ -449,6 +415,9 @@ main {
     justify-content: center;
     text-align: center;
   }
+  .hero-banner h2 {
+    font-size: 1.8em;
+  }
   .contact address {
     flex-direction: column;
     align-items: flex-end;
@@ -468,12 +437,20 @@ main {
   }
 }
 
+/* 100% image width on smaller screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
 
 /* modal images start */
 #myImg {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  border: 2px white solid;
+  width: 200px;
 }
 
 #myImg:hover {opacity: 0.7;}
@@ -547,12 +524,5 @@ main {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
-}
-
-/* 100% image width on smaller screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
 }
 /* modal images end */
