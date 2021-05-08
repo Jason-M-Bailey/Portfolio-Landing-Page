@@ -247,44 +247,45 @@ main {
 }
 
 /* how to combine this section? */
-.flex-item-bootcamp:hover {
+.flex-item-bootcamp:hover, .flex-item-projects:hover, .flex-item-bookmarks:hover {
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 0px 8px black, 0 0 30px black;
 }
-
-.flex-item-bootcamp div {
-  background-color: var(--secondary);
-  padding: 8px 10px;
-}
-
-.flex-item-bootcamp h3 {
-  font-size: 2rem;
-}
-
+/*
 .flex-item-projects:hover {
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 0px 8px black, 0 0 30px black;
-}
-
-.flex-item-projects div {
-  background-color: var(--secondary);
-  padding: 8px 10px;
-}
-
-.flex-item-projects h3 {
-  font-size: 1.7rem;
 }
 
 .flex-item-bookmarks:hover {
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 0px 8px black, 0 0 30px black;
 }
+*/
+
+.flex-item-bootcamp div, .flex-item-projects div, .flex-item-bookmarks div {
+  background-color: var(--secondary);
+  padding: 8px 10px;
+}
+/*
+.flex-item-projects div {
+  background-color: var(--secondary);
+  padding: 8px 10px;
+}
 
 .flex-item-bookmarks div {
   background-color: var(--secondary);
   padding: 8px 10px;
 }
+*/
 
+.flex-item-bootcamp h3 {
+  font-size: 2rem;
+}  
+
+.flex-item-projects h3 {
+  font-size: 1.7rem;
+}  
 .flex-item-bookmarks h3 {
   font-size: 1rem;
 }
