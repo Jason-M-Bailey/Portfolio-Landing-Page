@@ -6,6 +6,32 @@ html {
   scroll-behavior: smooth;
 }
 
+html {
+  /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.5rem;
+}
+p, h5 {
+  font-size: 2rem;
+}
+a, h6 {
+  font-size: 1.5rem;
+}
+/* p {
+  margin-bottom: 1rem;
+} */
+
 /* set the palette */
 :root {
   --primary: rgba(39, 42, 131, 1);
@@ -45,7 +71,6 @@ header h1 {
   background-color: var(--secondary);
   padding: 5px 1% 5px 6%;
   margin: 0;
-  font-size: 3vw;
   line-height: 1;
 }
 
@@ -60,7 +85,6 @@ nav a {
   padding: 5px 10px;
   color: var(--secondary);
   margin-right: 10px;
-  font-size: 1.2rem;
   /* allows :hover to transition background to cover the text */
   background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
   background-repeat: no-repeat;
@@ -103,12 +127,11 @@ main {
   flex: 0 0 90%;
 }
 
-.hero-banner h2 {
+.hero-banner h3 {
   background-color: var(--primary);
   color: var(--secondary);
   margin: 0;
   padding: 5px 10px;
-  font-size: 2.3rem;
   line-height: 1.2;
   display: inline;
 }
@@ -133,14 +156,6 @@ main {
   .page-section > div {
     flex: 0 0 100%;
   }
-  .page-section > h2 {
-    border-right: none;
-    border-bottom: 4px solid var(--primary);
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    text-align: right;
-    font-size: 7vw;
-  }
 
 .page-section > h2 {
   border-right: none;
@@ -148,11 +163,6 @@ main {
   margin-bottom: 20px;
   padding-bottom: 10px;
   text-align: right;
-  font-size: 4vw;
-}
-
-.page-section > div {
-  flex: 0 0 100%;
 }
 
 /* if you want h2 tags on the left column
@@ -172,7 +182,6 @@ main {
 
 .page-section p {
   margin-bottom: 20px;
-  font-size: 3vh;
 }
 
 .flex-container {
@@ -194,7 +203,6 @@ main {
   background-size: 100%;
   transition: all 0.5s;
   border-radius: 5px;
-  font-size: 0.9rem;
   height: 250px; /* different v other flex-item sections */
   flex-basis: calc(33% - 1em); /* different v other flex-item sections */
 }
@@ -217,7 +225,6 @@ main {
   background-size: 100%;
   transition: all 0.5s;
   border-radius: 5px;
-  font-size: 0.9rem;
   height: 230px; /* different v other flex-item sections */
   flex-basis: calc(100% - 1em); /* different v other flex-item sections */
 }
@@ -235,7 +242,6 @@ main {
   background-size: 100%;
   transition: all 0.5s;
   border-radius: 5px;
-  font-size: 0.9rem;
   height: 100px; /* different v other flex-item sections */
   flex-basis: calc(25% - 1em); /* different v other flex-item sections */
 }
@@ -296,7 +302,6 @@ main {
   color: var(--tertiary);
   padding: 5px;
   text-decoration: none;
-  font-size: 1.3rem;
   font-style: normal;
   background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
   background-repeat: no-repeat;
@@ -398,7 +403,6 @@ main {
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
-    font-size: 6vw;
   }
   header nav {
     justify-content: center;
@@ -413,7 +417,7 @@ main {
     margin-bottom: 20px;
     padding-bottom: 10px;
     text-align: center;
-    font-size: 5vw;
+    /* font-size: 5vw; */
   }
   .flex-item-projects {
     flex-basis: calc(50% - 1em);
@@ -438,25 +442,13 @@ main {
     justify-content: center;
     text-align: center;
   }
-  .hero-banner h2 {
-    font-size: 1.8em;
-  }
   .contact address {
     flex-direction: column;
     align-items: flex-end;
   }
-  .nav a {
-    font-size: 0.8rem;
-  }
-  .page-section > h2 {
-    font-size: 30pt;
-  }
   .flex-item-bookmarks {
     flex-basis: calc(50% - 1em);
     height: 75px;
-  }
-  .flex-item-bookmarks h3 {
-    font-size: 0.7rem;
   }
 }
 
