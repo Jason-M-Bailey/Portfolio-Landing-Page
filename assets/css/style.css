@@ -592,11 +592,10 @@ MODAL IMAGE END */
   margin: auto;
   padding: 0 0 0 0;
   width: 80%;
-  max-width: 1200px;
+  max-width: 450px;
 }
 
-/* Same with your slides, you set the display to none, because you want to choose which 
-   one is shown at a time. */
+/* Same with your slides, you set the display to none, because you want to choose which one is shown at a time. */
 
 .slide {
   display: none;
@@ -663,9 +662,9 @@ img.hover-shadow {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: rgb(39, 42, 131);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 40px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
