@@ -191,7 +191,7 @@ main {
 }
 
 .flex-item-projects {
-  border: 2px solid white;
+  border: 2px solid white; /* different v other flex-item sections */
   background-color: var(--primary);
   color: var(--tertiary);
   display: flex;
@@ -213,7 +213,7 @@ main {
 }
 
 .flex-item-bootcamp {
-  border: 3px solid white;
+  border: 3px solid white; /* different v other flex-item sections */
   background-color: var(--primary);
   color: var(--tertiary);
   display: flex;
@@ -230,7 +230,7 @@ main {
 }
 
 .flex-item-bookmarks {
-  border: 1px solid white;
+  border: 1px solid white; /* different v other flex-item sections */
   background-color: var(--primary);
   color: var(--tertiary);
   display: flex;
@@ -251,43 +251,20 @@ main {
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 0px 8px black, 0 0 30px black;
 }
-/*
-.flex-item-projects:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px 0px 8px black, 0 0 30px black;
-}
-
-.flex-item-bookmarks:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0px 0px 8px black, 0 0 30px black;
-}
-*/
 
 .flex-item-bootcamp div, .flex-item-projects div, .flex-item-bookmarks div {
   background-color: var(--secondary);
   padding: 8px 10px;
 }
-/*
-.flex-item-projects div {
-  background-color: var(--secondary);
-  padding: 8px 10px;
-}
-
-.flex-item-bookmarks div {
-  background-color: var(--secondary);
-  padding: 8px 10px;
-}
-*/
 
 .flex-item-bootcamp h3 {
   font-size: 2rem;
-}  
-
+}
 .flex-item-projects h3 {
   font-size: 1.7rem;
 }  
 .flex-item-bookmarks h3 {
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 /* contact section */
@@ -460,8 +437,8 @@ main {
   }
 }
 
-/* light box start */
 
+/* light box start */
 .preview {
   width: 100%;
 }
