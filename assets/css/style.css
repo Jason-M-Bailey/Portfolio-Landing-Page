@@ -22,10 +22,12 @@ h3 {
 h4 {
   font-size: 2.5rem;
 }
-p, h5 {
+p,
+h5 {
   font-size: 2rem;
 }
-a, h6 {
+a,
+h6 {
   font-size: 1.5rem;
 }
 /* p {
@@ -44,7 +46,7 @@ a, h6 {
 /* is there a way to make all a href tags use target:"_blank" */
 
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
   color: var(--primary);
   background-color: var(--light);
   line-height: 1.5;
@@ -64,6 +66,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1; /* stops lightbox images from messing with header opaque */
 }
 
 header h1 {
@@ -86,7 +89,11 @@ nav a {
   color: var(--secondary);
   margin-right: 10px;
   /* allows :hover to transition background to cover the text */
-  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+  background-image: linear-gradient(
+    270deg,
+    var(--secondary) 0%,
+    var(--secondary) 100%
+  );
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: bottom;
@@ -109,11 +116,12 @@ main {
 
 .hero-banner {
   background: var(--primary);
-  background-image: url("../images/lines-of-code.jpeg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background-image: url("../images/lines-of-code.jpeg"),
+    linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
   background-size: cover;
   background-position: center;
   /* blends background image and gradient */
-  background-blend-mode: soft-light; 
+  background-blend-mode: soft-light;
   min-height: 50vh;
   color: var(--light);
   padding: 2% 6%;
@@ -153,9 +161,9 @@ main {
 }
 
 .page-section > h2,
-  .page-section > div {
-    flex: 0 0 100%;
-  }
+.page-section > div {
+  flex: 0 0 100%;
+}
 
 .page-section > h2 {
   border-right: none;
@@ -190,8 +198,9 @@ main {
   justify-content: center;
 }
 
-.flex-item-projects {
-  border: 2px solid white; /* different v other flex-item sections */
+.flex-item-projects,
+.flex-item-bookmarks,
+.flex-item-bootcamp {
   background-color: var(--primary);
   color: var(--tertiary);
   display: flex;
@@ -203,8 +212,12 @@ main {
   background-size: 100%;
   transition: all 0.5s;
   border-radius: 5px;
-  height: 250px; /* different v other flex-item sections */
-  flex-basis: calc(33% - 1em); /* different v other flex-item sections */
+}
+
+.flex-item-projects {
+  border: 2px solid white;
+  height: 250px;
+  flex-basis: calc(33% - 1em);
 }
 
 .flex-item-projects:first-child {
@@ -213,46 +226,27 @@ main {
 }
 
 .flex-item-bootcamp {
-  border: 3px solid white; /* different v other flex-item sections */
-  background-color: var(--primary);
-  color: var(--tertiary);
-  display: flex;
-  align-items: flex-end;
-  padding: 0 0 20px 0;
-  margin: 0.5em;
-  text-decoration: none;
-  background-blend-mode: soft-light;
-  background-size: 100%;
-  transition: all 0.5s;
-  border-radius: 5px;
-  height: 230px; /* different v other flex-item sections */
-  flex-basis: calc(100% - 1em); /* different v other flex-item sections */
+  border: 3px solid white;
+  height: 230px;
+  flex-basis: calc(100% - 1em);
 }
 
 .flex-item-bookmarks {
-  border: 1px solid white; /* different v other flex-item sections */
-  background-color: var(--primary);
-  color: var(--tertiary);
-  display: flex;
-  align-items: flex-end;
-  padding: 0 0 20px 0;
-  margin: 0.5em;
-  text-decoration: none;
-  background-blend-mode: soft-light;
-  background-size: 100%;
-  transition: all 0.5s;
-  border-radius: 5px;
-  height: 100px; /* different v other flex-item sections */
-  flex-basis: calc(25% - 1em); /* different v other flex-item sections */
+  border: 1px solid white;
+  height: 100px;
+  flex-basis: calc(25% - 1em);
 }
 
-/* how to combine this section? */
-.flex-item-bootcamp:hover, .flex-item-projects:hover, .flex-item-bookmarks:hover {
+.flex-item-bootcamp:hover,
+.flex-item-projects:hover,
+.flex-item-bookmarks:hover {
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 0px 8px black, 0 0 30px black;
 }
 
-.flex-item-bootcamp div, .flex-item-projects div, .flex-item-bookmarks div {
+.flex-item-bootcamp div,
+.flex-item-projects div,
+.flex-item-bookmarks div {
   background-color: var(--secondary);
   padding: 8px 10px;
 }
@@ -262,7 +256,7 @@ main {
 }
 .flex-item-projects h3 {
   font-size: 1.7rem;
-}  
+}
 .flex-item-bookmarks h3 {
   font-size: 1.4rem;
 }
@@ -281,7 +275,11 @@ main {
   padding: 5px;
   text-decoration: none;
   font-style: normal;
-  background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+  background-image: linear-gradient(
+    270deg,
+    var(--primary) 0%,
+    var(--primary) 100%
+  );
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: bottom;
@@ -413,7 +411,8 @@ main {
   .flex-item:last-child {
     flex-basis: 100%;
   }
-  .flex-item:first-child, .flex-item:last-child {
+  .flex-item:first-child,
+  .flex-item:last-child {
     min-height: 150px;
   }
   .hero-banner {
@@ -431,12 +430,11 @@ main {
 }
 
 /* 100% image width on smaller screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
   }
 }
-
 
 /* light box start */
 .preview {
@@ -459,7 +457,7 @@ main {
 }
 
 /* define what the lightbox will look like. display: none; - do not show until the user clicks on one of the previews. */
-   
+
 .modal {
   display: none;
   position: fixed;
@@ -484,7 +482,7 @@ main {
   max-width: 450px;
 }
 
-/* set the display to none, you want to choose which one is shown at a time. */
+/* set the display to none, you want to choose which one is shown when clicked */
 
 .slide {
   display: none;
@@ -504,9 +502,10 @@ main {
   justify-content: space-between;
 }
 
-/* make previews a little transparent to show that they are "inactive". then add an .active or :hover class to animate the selections for your user when they interact with your controls and clickable content. */
+/* previews a little transparent to show that they are "inactive". .active and :hover class to animate the selections when they interact with images. */
 
-img.preview, img.modal-preview {
+img.preview,
+img.modal-preview {
   opacity: 0.6;
 }
 
@@ -522,7 +521,7 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} 
+}
 
 .close {
   color: white;
@@ -567,4 +566,4 @@ img.hover-shadow {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* light box end */ 
+/* light box end */
