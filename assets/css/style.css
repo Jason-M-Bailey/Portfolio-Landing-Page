@@ -480,9 +480,7 @@ main {
   width: 25%;
 }
 
-/* Now you want to define what the lightbox will look like. Note that you have the display
-   as none. You don't want it to show until the user clicks on one of the previews. 
-   You will change this display property with JavaScript below. */
+/* Now you want to define what the lightbox will look like. Note that you have the display as none. You don't want it to show until the user clicks on one of the previews. You will change this display property with JavaScript below. */
    
 .modal {
   display: none;
