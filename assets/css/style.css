@@ -220,7 +220,7 @@ main {
   flex-basis: calc(33% - 1em);
 }
 
-.flex-item-projects:first-child {
+.flex-item-projects:first-child, .flex-item-projects:last-child {
   min-height: 300px;
   flex-basis: 100%;
 }
@@ -320,6 +320,9 @@ main {
 }
 .css-7 {
   background-image: url("../images/CSS-Challenge-Day-7.jpg");
+}
+.css-8 {
+  background-image: url("../images/css-day-8-animation-square.gif");
 }
 .css-border-generator {
   background-image: url("../images/css-border-generator.jpg");
