@@ -220,7 +220,7 @@ main {
   flex-basis: calc(33% - 1em);
 }
 
-.flex-item-projects:first-child, .flex-item-projects:last-child {
+.flex-item-projects:first-child/*, .flex-item-projects:last-child*/ {
   min-height: 300px;
   flex-basis: 100%;
 }
@@ -228,7 +228,7 @@ main {
 .flex-item-bootcamp {
   border: 3px solid white;
   height: 230px;
-  flex-basis: calc(100% - 1em);
+  flex-basis: calc(50% - 1em);
 }
 
 .flex-item-bookmarks {
@@ -324,6 +324,12 @@ main {
 .css-8 {
   background-image: url("../images/css-day-8-animation-square.gif");
 }
+.css-9 {
+  background-image: url("../images/CSS-day-9.jpg");
+}
+.css-10 {
+  background-image: url("../images/CSS-day-10.jpg");
+}
 .css-border-generator {
   background-image: url("../images/css-border-generator.jpg");
 }
@@ -338,6 +344,9 @@ main {
 }
 .freecodecamp {
   background-image: url("../images/freecodecamp.png");
+}
+.generate-password {
+  background-image: url('../images/generate-password.jpg');
 }
 .github {
   background-image: url("../images/github.png");
