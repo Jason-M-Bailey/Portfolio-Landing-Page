@@ -216,11 +216,11 @@ main {
 
 .flex-item-projects {
   border: 2px solid white;
-  height: 250px;
+  height: 100px;
   flex-basis: calc(33% - 1em);
 }
 
-.flex-item-projects:first-child/*, .flex-item-projects:last-child*/ {
+.flex-item-projects:first-child, .flex-item-projects:last-child {
   min-height: 300px;
   flex-basis: 100%;
 }
@@ -351,6 +351,9 @@ main {
 .github {
   background-image: url("../images/github.png");
 }
+.glowing-hover {
+  background-image: url("../images/glowing-hover.gif");
+}
 .homework-01 {
   background-image: url("../images/homework-01.jpg");
 }
@@ -408,7 +411,11 @@ main {
     /* font-size: 5vw; */
   }
   .flex-item-projects {
-    flex-basis: calc(50% - 1em);
+    flex-basis: calc(33% - 1em);
+  }
+  .flex-item-projects:first-child, .flex-item-projects:last-child {
+    min-height: 300px;
+    flex-basis: 100%;
   }
   .flex-item-bookmarks {
     flex-basis: calc(33% - 1em);
