@@ -220,7 +220,7 @@ main {
   flex-basis: calc(33% - 1em);
 }
 
-.flex-item-projects:first-child, .flex-item-projects:last-child {
+.flex-item-projects:first-child/*, .flex-item-projects:last-child*/ {
   min-height: 300px;
   flex-basis: 100%;
 }
@@ -258,7 +258,7 @@ main {
   font-size: 1.7rem;
 }
 .flex-item-bookmarks h3 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 /* contact section */
@@ -329,6 +329,9 @@ main {
 }
 .css-10 {
   background-image: url("../images/CSS-day-10.jpg");
+}
+.css-11 {
+  background-image: url("../images/css-challenge-11.gif");
 }
 .css-border-generator {
   background-image: url("../images/css-border-generator.jpg");
@@ -413,12 +416,9 @@ main {
   .flex-item-projects {
     flex-basis: calc(33% - 1em);
   }
-  .flex-item-projects:first-child, .flex-item-projects:last-child {
+  .flex-item-projects:first-child/*, .flex-item-projects:last-child*/ {
     min-height: 300px;
     flex-basis: 100%;
-  }
-  .flex-item-bookmarks {
-    flex-basis: calc(33% - 1em);
   }
 }
 
