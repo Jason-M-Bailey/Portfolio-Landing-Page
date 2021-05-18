@@ -220,7 +220,7 @@ main {
   flex-basis: calc(33% - 1em);
 }
 
-.flex-item-projects:first-child/*, .flex-item-projects:last-child*/ {
+.flex-item-projects:first-child, .flex-item-projects:last-child {
   min-height: 300px;
   flex-basis: 100%;
 }
@@ -229,6 +229,10 @@ main {
   border: 3px solid white;
   height: 230px;
   flex-basis: calc(50% - 1em);
+}
+
+.flex-item-bootcamp:last-child {
+  flex-basis: 100%;
 }
 
 .flex-item-bookmarks {
@@ -336,6 +340,9 @@ main {
 .css-12 {
   background-image: url("../images/css-challenge-12.gif");
 }
+.css-13 {
+  background-image: url("../images/css-challenge-13.gif");
+}
 .css-border-generator {
   background-image: url("../images/css-border-generator.jpg");
 }
@@ -419,7 +426,7 @@ main {
   .flex-item-projects {
     flex-basis: calc(33% - 1em);
   }
-  .flex-item-projects:first-child/*, .flex-item-projects:last-child*/ {
+  .flex-item-projects:first-child, .flex-item-projects:last-child {
     min-height: 300px;
     flex-basis: 100%;
   }
