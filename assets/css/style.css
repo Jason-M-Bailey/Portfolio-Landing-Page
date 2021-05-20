@@ -219,12 +219,12 @@ main {
   height: 100px;
   flex-basis: calc(33% - 1em);
 }
-
+/*
 .flex-item-projects:first-child, .flex-item-projects:last-child {
   min-height: 300px;
   flex-basis: 100%;
 }
-
+*/
 .flex-item-bootcamp {
   border: 3px solid white;
   height: 230px;
@@ -343,6 +343,9 @@ main {
 .css-13 {
   background-image: url("../images/css-challenge-13.gif");
 }
+.css-14 {
+  background-image: url("../images/css-challenge-14.jpg");
+}
 .css-border-generator {
   background-image: url("../images/css-border-generator.jpg");
 }
@@ -372,6 +375,9 @@ main {
 }
 .jacob-collier {
   background-image: url("../images/jacob-collier-wallpaper.jpg");
+}
+.js30-1 {
+  background-image: url("../images/js30-1.jpg");
 }
 .mosh {
   background-image: url("../images/programming-with-mosh.jpg");
