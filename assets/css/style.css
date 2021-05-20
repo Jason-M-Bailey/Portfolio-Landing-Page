@@ -219,12 +219,12 @@ main {
   height: 100px;
   flex-basis: calc(33% - 1em);
 }
-/*
+
 .flex-item-projects:first-child, .flex-item-projects:last-child {
   min-height: 300px;
   flex-basis: 100%;
 }
-*/
+
 .flex-item-bootcamp {
   border: 3px solid white;
   height: 230px;
@@ -364,6 +364,9 @@ main {
 .generate-password {
   background-image: url('../images/generate-password.jpg');
 }
+.generate-password-2 {
+  background-image: url("../images/generate-password-2.jpg");
+}
 .github {
   background-image: url("../images/github.png");
 }
@@ -378,6 +381,9 @@ main {
 }
 .js30-1 {
   background-image: url("../images/js30-1.jpg");
+}
+.js30-2 {
+  background-image: url("../images/js30-2.gif");
 }
 .mosh {
   background-image: url("../images/programming-with-mosh.jpg");
