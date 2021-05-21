@@ -217,7 +217,7 @@ main {
 .flex-item-projects {
   border: 2px solid white;
   height: 100px;
-  flex-basis: calc(33% - 1em);
+  flex-basis: calc(25% - 1em);
 }
 
 .flex-item-projects:first-child, .flex-item-projects:last-child {
@@ -298,8 +298,8 @@ main {
 }
 
 /* all the images */
-.days100 {
-  background-image: url("../images/100-days-of-css.jpg");
+.bootstrap {
+  background-image: url("../images/bootstrap.jpg");
 }
 .codecademy {
   background-image: url("../images/codecademy.jpg");
@@ -355,6 +355,9 @@ main {
 .css-tricks {
   background-image: url("../images/css-tricks.png");
 }
+.days100 {
+  background-image: url("../images/100-days-of-css.jpg");
+}
 .flat-ui {
   background-image: url("../images/flat-ui.jpg");
 }
@@ -384,6 +387,9 @@ main {
 }
 .js30-2 {
   background-image: url("../images/js30-2.gif");
+}
+.js30-3 {
+  background-image: url("../images/js30-3.jpg");
 }
 .mosh {
   background-image: url("../images/programming-with-mosh.jpg");
@@ -436,7 +442,7 @@ main {
     /* font-size: 5vw; */
   }
   .flex-item-projects {
-    flex-basis: calc(33% - 1em);
+    flex-basis: calc(50% - 1em);
   }
   .flex-item-projects:first-child, .flex-item-projects:last-child {
     min-height: 300px;
