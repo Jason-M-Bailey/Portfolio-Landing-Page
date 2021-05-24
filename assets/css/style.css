@@ -304,6 +304,9 @@ main {
 .codecademy {
   background-image: url("../images/codecademy.jpg");
 }
+.codier-hover {
+  background-image: url("../images/codier-hover.gif");
+}
 .css-1 {
   background-image: url("../images/css-day-1-animation-square.gif");
 }
