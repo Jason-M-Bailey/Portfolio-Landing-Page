@@ -219,22 +219,22 @@ main {
   height: 100px;
   flex-basis: calc(25% - 1em);
 }
-
+/*
 .flex-item-projects:first-child, .flex-item-projects:last-child {
   min-height: 300px;
   flex-basis: 100%;
 }
-
+*/
 .flex-item-bootcamp {
   border: 3px solid white;
   height: 230px;
   flex-basis: calc(50% - 1em);
 }
-
+/*
 .flex-item-bootcamp:last-child {
   flex-basis: 100%;
 }
-
+*/
 .flex-item-bookmarks {
   border: 1px solid white;
   height: 100px;
@@ -352,6 +352,9 @@ main {
 .css-15 {
   background-image: url("../images/css-15.gif") ;
 }
+.css-16 {
+  background-image: url("../images/css-16.jpg");
+}
 .css-border-generator {
   background-image: url("../images/css-border-generator.jpg");
 }
@@ -360,6 +363,9 @@ main {
 }
 .css-tricks {
   background-image: url("../images/css-tricks.png");
+}
+.dailyplanner {
+  background-image: url("../images/Daily-Planner.jpg");
 }
 .days100 {
   background-image: url("../images/100-days-of-css.jpg");
