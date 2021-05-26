@@ -144,6 +144,10 @@ main {
   display: inline;
 }
 
+.preview {
+  border-radius: 15px;
+}
+
 .page-wrapper {
   max-width: 88%;
   margin-left: auto;
