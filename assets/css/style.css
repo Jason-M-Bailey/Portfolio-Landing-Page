@@ -312,7 +312,7 @@ main {
   background-image: url("../images/codier-hover.gif");
 }
 .css-1 {
-  background-image: url("../images/css-day-1-animation-square.gif");
+  background-image: url("../images/css-1.jpg");
 }
 .css-2 {
   background-image: url("../images/css-day-2-animation-square.gif");
@@ -358,6 +358,12 @@ main {
 }
 .css-16 {
   background-image: url("../images/css-16.jpg");
+}
+.css-17 {
+  background-image: url("../images/css-17.gif");
+}
+.css-17-v2 {
+  background-image: url("../images/css-17-v2.gif");
 }
 .css-border-generator {
   background-image: url("../images/css-border-generator.jpg");
