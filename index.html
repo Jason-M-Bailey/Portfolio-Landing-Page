@@ -1,448 +1,720 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Jason Bailey | Full Stack Web Developer</title>
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="shortcut icon" href="assets/images/cropped-sit-icon-jb.jpg">
-</head>
-<body>
-  <header id="header">
-    <h1>/jason.m.bailey</h1>
-    <nav>
-      <a href="#about">/about me</a>
-      <a href="#projects">/projects</a>
-      <a href="#bootcamp">/bootcamp</a>
-      <a href="#bookmarks">/bookmarks</a>
-      <a href="#contact">/contact</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jason Bailey | Full Stack Web Developer</title>
 
-  <section class="hero-banner">
-    <div>
-      <h3>/full stack web developer</h3>
-    </div>
-  </section>
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
 
-<!-- about me section -->
-  <main class="page-wrapper">
-    <section class="page-section" id="about">
-      <h2>/about me</h2>
+    <!-- <link rel="stylesheet" href="assets/css/reset.css" /> -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/images/cropped-sit-icon-jb.jpg" />
+  </head>
+  <body>
+    <header id="header">
+      <h1>/jason.m.bailey</h1>
+      <nav>
+        <a href="#about">/about me</a>
+        <a href="#projects">/projects</a>
+        <a href="#bootcamp">/bootcamp</a>
+        <a href="#bookmarks">/bookmarks</a>
+        <a href="#contact">/contact</a>
+      </nav>
+    </header>
+
+    <section class="hero-banner">
       <div>
-        <p>I started the UNC Charlotte Full Stack Web Development in April 2021 with a view to a more flexible, challenging and rewarding career.</p>
-        <p>Through the first 3 weeks of the bootcamp, we have focused on HTML, CSS & Javascript. The 24 week course covers a number of topics and my portfolio will be continually updated to reflect these new subjects. Below are a sampling of projects I have worked on indepedently, bootcamp projects and a compilation of my most used resources.</p>
-        <p>I am happily married with 6 year old twin girls, Margot and Renee. My wife and I love to travel, from beaches to mountains to Europe and Central America. My daughters love ballet, tumbling, soccer and anything My Little Pony!</p>
-      </div>
-      
-      <!-- light box section start -->
-      <!-- preview of the images you wish to display -->
-      <div class="row">
-        <div class="col">
-            <img src="./assets/images/bailey01-square.jpg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Bailey family at the USWNT game"/>
-        </div>
-        <div class="col">
-            <img src="./assets/images/bailey02-square.jpg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Bailey family at the beach"/>
-        </div>
-        <div class="col">
-            <img src="./assets/images/bailey03-square.jpg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Jason and Amanda at a wedding"/>
-        </div>
-        <div class="col">
-            <img src="./assets/images/bailey04-square.jpg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Bailey family on vacation in Asheville, NC"/>
-        </div>
-      </div>
-      
-      <!-- this is the lightbox, contained in a modal. provide all the images, controls, and another set of preview images as the dots. dots show your user which image is currently active. -->
-      <div id="Lightbox" class="modal">
-        <span class="close pointer" onclick="closeLightbox()">&times;</span>
-        <div class="modal-content">
-          <div class="slide">
-            <img src="./assets/images/bailey01-square.jpg" class="image-slide" alt="Bailey family at the USWNT game"/>
-          </div>
-          <div class="slide">
-            <img src="./assets/images/bailey02-square.jpg" class="image-slide" alt="Bailey family at the beach"/>
-          </div>
-          <div class="slide">
-            <img src="./assets/images/bailey03-square.jpg" class="image-slide" alt="Jason and Amanda at a wedding"/>
-          </div>
-          <div class="slide">
-            <img src="./assets/images/bailey04-square.jpg" class="image-slide" alt="Bailey family on vacation in Asheville, NC"/>
-          </div>
-          <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
-          <a class="next" onclick="changeSlide(1)">&#10095;</a>
-          <div class="dots">
-            <div class="col">
-              <img src="./assets/images/bailey01-square.jpg" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Bailey family at the USWNT game"/>
-            </div>
-            <div class="col">
-              <img src="./assets/images/bailey02-square.jpg" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="Bailey family at the beach"/>
-            </div>
-            <div class="col">
-              <img src="./assets/images/bailey03-square.jpg" class="modal-preview hover-shadow" onclick="toSlide(3)" alt="Jason and Amanda at a wedding"/>
-            </div>
-            <div class="col">
-              <img src="./assets/images/bailey04-square.jpg" class="modal-preview hover-shadow" onclick="toSlide(4)" alt="Bailey family on vacation in Asheville, NC"/>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div> 
-    </section>
-    <!-- light box section end -->  
-
-    <!-- projects section -->
-    <section class="page-section" id="projects">
-      <h2>/projects</h2>
-      <div class="flex-container">
-        
-        <a href="https://jason-m-bailey.github.io/javascript30-day06/" target="_blank" class="flex-item-projects js30-6">
-          <div>
-            <h3>JavaScript30 - #6</h3>
-            <span>JavaScript</span>
-          </div>
-        </a>
-
-        <a href="https://jason-m-bailey.github.io/100daysofcssday17/" target="_blank" class="flex-item-projects css-17">
-          <div>
-            <h3>CSS Challenge - #17</h3>
-            <span>CSS</span>
-          </div>
-        </a>
-
-        <a href="https://jason-m-bailey.github.io/100daysofcssday17v2/" target="_blank" class="flex-item-projects css-17-v2">
-          <div>
-            <h3>CSS - #17 v2</h3>
-            <span>CSS</span>
-          </div>
-        </a>
-
-        <a href="https://jason-m-bailey.github.io/javascript30-day05/" target="_blank" class="flex-item-projects js30-5">
-          <div>
-            <h3>JavaScript30 - #5</h3>
-            <span>JavaScript</span>
-          </div>
-        </a>
-
-      
-        <a href="https://jason-m-bailey.github.io/100daysofcssday16/" target="_blank" class="flex-item-projects css-16">
-          <div>
-            <h3>CSS Challenge #16</h3>
-            <span>CSS</span>
-          </div>
-        </a>
-
-        <a href="https://jason-m-bailey.github.io/codier-hover/" target="_blank" class="flex-item-projects codier-hover">
-          <div>
-            <h3>Codier Hover</h3>
-            <span>CSS</span>
-          </div>
-        </a>
-        
-        <a href="https://jason-m-bailey.github.io/100daysofcssday15/" target="_blank" class="flex-item-projects css-15">
-          <div>
-            <h3>CSS Challenge #15</h3>
-            <span>CSS</span>
-          </div>
-        </a>
-        
-        <a href="https://jason-m-bailey.github.io/javascript30-day03/" target="_blank" class="flex-item-projects js30-3">
-          <div>
-            <h3>JavaScript30 - #3</h3>
-            <span>JavaScript</span>
-          </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/javascript30-day02/" target="_blank" class="flex-item-projects js30-2">
-          <div>
-            <h3>JavaScript30 - #2</h3>
-            <span>JavaScript</span>
-          </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/javascript30-day01/" target="_blank" class="flex-item-projects js30-1">
-          <div>
-            <h3>JavaScript30 - #1</h3>
-            <span>JavaScript</span>
-          </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/100daysofcssday14/" target="_blank" class="flex-item-projects css-14">
-          <div>
-            <h3>CSS Challenge #14</h3>
-            <span>CSS</span>
-          </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/100daysofcssday13/" target="_blank" class="flex-item-projects css-13">
-          <div>
-            <h3>CSS Challenge #13</h3>
-            <span>CSS</span>
-          </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/glowinghover/" target="_blank" class="flex-item-projects glowing-hover">
-          <div>
-            <h3>Glowing Hover</h3>
-            <span>CSS</span>
-          </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/100daysofcssday12/" target="_blank" class="flex-item-projects css-12">
-          <div>
-            <h3>CSS Challenge #12</h3>
-            <span>HTML/CSS</span>
-          </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/100daysofcssday11/" target="_blank" class="flex-item-projects css-11">
-          <div>
-            <h3>CSS Challenge #11</h3>
-            <span>HTML/CSS</span>
-          </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/100daysofcssday10/" target="_blank" class="flex-item-projects css-10">
-          <div>
-            <h3>CSS Challenge #10</h3>
-            <span>HTML/CSS</span>
-          </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/100daysofcssday09/" target="_blank" class="flex-item-projects css-9">
-          <div>
-            <h3>CSS Challenge #9</h3>
-            <span>HTML/CSS</span>
-          </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/100daysofcssday08/" target="_blank" class="flex-item-projects css-8">
-          <div>
-            <h3>CSS Challenge #8</h3>
-            <span>HTML/CSS</span>
-          </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/100daysofcssday07/" target="_blank" class="flex-item-projects css-7">
-          <div>
-            <h3>CSS Challenge #7</h3>
-            <span>HTML/CSS</span>
-          </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/100daysofcssday06/" target="_blank" class="flex-item-projects css-6">
-          <div>
-            <h3>CSS Challenge #6</h3>
-            <span>HTML/CSS</span>
-          </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/100daysofcssday05/" target="_blank" class="flex-item-projects css-5">
-          <div>
-            <h3>CSS Challenge #5</h3>
-            <span>HTML/CSS</span>
-          </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/100daysofcssday04/" target="_blank" class="flex-item-projects css-4">
-          <div>
-            <h3>CSS Challenge #4</h3>
-            <span>HTML/CSS</span>
-          </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/100daysofcssday03/" target="_blank" class="flex-item-projects css-3">
-          <div>
-            <h3>CSS Challenge #3</h3>
-            <span>HTML/CSS</span>
-          </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/100daysofcssday02/" target="_blank" class="flex-item-projects css-2">
-          <div>
-            <h3>CSS Challenge #2</h3>
-            <span>HTML/CSS</span>
-          </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/100daysofcssday01/" target="_blank" class="flex-item-projects css-1">
-          <div>
-            <h3>CSS Challenge #1</h3>
-            <span>HTML/CSS</span>
-          </div>
-        </a>
+        <h3>/full stack web developer</h3>
       </div>
     </section>
 
-    <!-- bootcamp section -->
-    <section class="page-section" id="bootcamp">
-      <h2>/bootcamp</h2>
-      <div class="flex-container">
-        
-        <a href="https://jason-m-bailey.github.io/dailyplanner/" target="_blank" class="flex-item-bootcamp dailyplanner">
-          <div>
-            <h3>Daily Planner</h3>
-            <span>JS/Moment</span>
-          </div>
-        </a>
+    <!-- about me section -->
+    <main class="page-wrapper">
+      <section class="page-section" id="about">
+        <h2>/about me</h2>
+        <div>
+          <p>
+            I started the UNC Charlotte Full Stack Web Development in April 2021
+            with a view to a more flexible, challenging and rewarding career.
+          </p>
+          <p>
+            Through the first 3 weeks of the bootcamp, we have focused on HTML,
+            CSS & Javascript. The 24 week course covers a number of topics and
+            my portfolio will be continually updated to reflect these new
+            subjects. Below are a sampling of projects I have worked on
+            indepedently, bootcamp projects and a compilation of my most used
+            resources.
+          </p>
+          <p>
+            I am happily married with 6 year old twin girls, Margot and Renee.
+            My wife and I love to travel, from beaches to mountains to Europe
+            and Central America. My daughters love ballet, tumbling, soccer and
+            anything My Little Pony!
+          </p>
+        </div>
 
-        <a href="https://jason-m-bailey.github.io/generaterandompassword/" target="_blank" class="flex-item-bootcamp generate-password-2">
-          <div>
-            <h3>Generate Password</h3>
-            <span>Javascript</span>
+        <!-- light box section start -->
+        <!-- preview of the images you wish to display -->
+        <div class="row">
+          <div class="col">
+            <img
+              src="./assets/images/bailey01-square.jpg"
+              onclick="openLightbox();toSlide(1)"
+              class="hover-shadow preview"
+              alt="Bailey family at the USWNT game"
+            />
           </div>
-        </a>
+          <div class="col">
+            <img
+              src="./assets/images/bailey02-square.jpg"
+              onclick="openLightbox();toSlide(2)"
+              class="hover-shadow preview"
+              alt="Bailey family at the beach"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="./assets/images/bailey03-square.jpg"
+              onclick="openLightbox();toSlide(3)"
+              class="hover-shadow preview"
+              alt="Jason and Amanda at a wedding"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="./assets/images/bailey04-square.jpg"
+              onclick="openLightbox();toSlide(3)"
+              class="hover-shadow preview"
+              alt="Bailey family on vacation in Asheville, NC"
+            />
+          </div>
+        </div>
 
-        <a href="https://jason-m-bailey.github.io/generatepassword/" target="_blank" class="flex-item-bootcamp generate-password">
-          <div>
-            <h3>Generate Password</h3>
-            <span>Javascript</span>
+        <!-- this is the lightbox, contained in a modal. provide all the images, controls, and another set of preview images as the dots. dots show your user which image is currently active. -->
+        <div id="Lightbox" class="modal">
+          <span class="close pointer" onclick="closeLightbox()">&times;</span>
+          <div class="modal-content">
+            <div class="slide">
+              <img
+                src="./assets/images/bailey01-square.jpg"
+                class="image-slide"
+                alt="Bailey family at the USWNT game"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./assets/images/bailey02-square.jpg"
+                class="image-slide"
+                alt="Bailey family at the beach"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./assets/images/bailey03-square.jpg"
+                class="image-slide"
+                alt="Jason and Amanda at a wedding"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./assets/images/bailey04-square.jpg"
+                class="image-slide"
+                alt="Bailey family on vacation in Asheville, NC"
+              />
+            </div>
+            <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            <div class="dots">
+              <div class="col">
+                <img
+                  src="./assets/images/bailey01-square.jpg"
+                  class="modal-preview hover-shadow"
+                  onclick="toSlide(1)"
+                  alt="Bailey family at the USWNT game"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./assets/images/bailey02-square.jpg"
+                  class="modal-preview hover-shadow"
+                  onclick="toSlide(2)"
+                  alt="Bailey family at the beach"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./assets/images/bailey03-square.jpg"
+                  class="modal-preview hover-shadow"
+                  onclick="toSlide(3)"
+                  alt="Jason and Amanda at a wedding"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./assets/images/bailey04-square.jpg"
+                  class="modal-preview hover-shadow"
+                  onclick="toSlide(4)"
+                  alt="Bailey family on vacation in Asheville, NC"
+                />
+              </div>
+            </div>
           </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/02weekminiproject/" target="_blank" class="flex-item-bootcamp css-snippets">
-          <div>
-            <h3>CSS Snippets</h3>
-            <span>HTML/CSS</span>
-          </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/01Homework/" target="_blank" class="flex-item-bootcamp homework-01">
-          <div>
-            <h3>Code Refactor</h3>
-            <span>HTML/CSS</span>
-          </div>
-        </a>
-        <a href="https://jason-m-bailey.github.io/JacobCollierFanSite/" target="_blank" class="flex-item-bootcamp jacob-collier">
-          <div>
-            <h3>Jacob Collier Project</h3>
-            <span>HTML/CSS</span>
-          </div>
-        </a>
-      </div>
-    </section>
+        </div>
+      </section>
+      <!-- light box section end -->
 
-    <!-- Bookmarks section -->
-    <section class="page-section" id="bookmarks">
-      <h2>/bookmarks</h2>
-      <div class="flex-container">
-        <a href="https://100dayscss.com/" target="_blank" class="flex-item-bookmarks days100">
-          <div>
-            <h3>100 Days of CSS</h3>
-          </div>
-        </a>
-        <a href="https://getbootstrap.com/" target="_blank"  class="flex-item-bookmarks bootstrap">
-          <div>
-            <h3>Bootstrap</h3>
-          </div>
-        </a>
-        <a href="https://www.codecademy.com/" target="_blank" class="flex-item-bookmarks codecademy">
-          <div>
-            <h3>codecademy</h3> 
-          </div>
-        </a>
-        <a href="https://html-css-js.com/css/generator/border-outline/" target="_blank" class="flex-item-bookmarks css-border-generator">
-          <div>
-            <h3>CSS Border Generator</h3>
-          </div>
-        </a>
-        <a href="https://css-tricks.com/" target="_blank" class="flex-item-bookmarks css-tricks">
-          <div>
-            <h3>CSS Tricks</h3>
-          </div>
-        </a>
-        <a href="https://flatuicolors.com/" target="_blank" class="flex-item-bookmarks flat-ui">
-          <div>
-            <h3>Flat UI Palettes</h3>
-          </div>
-        </a>
-        <a href="https://www.freecodecamp.org/learn" target="_blank" class="flex-item-bookmarks freecodecamp">
-          <div>
-            <h3>freeCodeCamp</h3>
-          </div>
-        </a>
-        <a href="https://github.com/" target="_blank" class="flex-item-bookmarks github">
-          <div>
-            <h3>GitHub</h3>
-          </div>
-        </a>
-        <a href="https://www.youtube.com/channel/UCWv7vMbMWH4-V0ZXdmDpPBA" target="_blank" class="flex-item-bookmarks mosh">
-          <div>
-            <h3>Programming with Mosh</h3>
-          </div>
-        </a>
-        <a href="https://stackoverflow.com/" target="_blank" class="flex-item-bookmarks stack-overflow">
-          <div>
-            <h3>Stack Overflow</h3>
-          </div>
-        </a>
-        <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" target="_blank" class="flex-item-bookmarks traversy-media">
-          <div>
-            <h3>Traversy Media</h3>
-          </div>
-        </a>
-        <a href="https://www.w3schools.com/" target="_blank" class="flex-item-bookmarks w3-schools">
-          <div>
-            <h3>W3 Schools</h3>
-          </div>
-        </a>
-        <a href="https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw" target="_blank"  class="flex-item-bookmarks web-dev-simplified">
-          <div>
-            <h3>Web Dev Simplified</h3>
-          </div>
-        </a>
-        <a href="https://codier.io/" target="_blank"  class="flex-item-bookmarks ">
-          <div>
-            <h3>Codier</h3>
-          </div>
-        </a>
-        <a href="https://www.udemy.com/" target="_blank"  class="flex-item-bookmarks ">
-          <div>
-            <h3>Udemy</h3>
-          </div>
-        </a>
-        <a href="https://www.google.com/search?q=rgb+color+picker&rlz=1C1VDKB_enUS932US932&oq=rgb&aqs=chrome.0.69i59j69i57j0i67i433j0j0i433j0i67j0i20i263i433j0i433.3024j0j7&sourceid=chrome&ie=UTF-8" target="_blank"  class="flex-item-bookmarks ">
-          <div>
-            <h3>Google RBG</h3>
-          </div>
-        </a>
-        <a href="https://developer.chrome.com/" target="_blank"  class="flex-item-bookmarks ">
-          <div>
-            <h3>Chrome Developers</h3>
-          </div>
-        </a>
-        <a href="#" target="_blank"  class="flex-item-bookmarks ">
-          <div>
-            <h3>Update Me</h3>
-          </div>
-        </a>
-        <a href="#" target="_blank"  class="flex-item-bookmarks ">
-          <div>
-            <h3>Update Me</h3>
-          </div>
-        </a>
-        <a href="#" target="_blank"  class="flex-item-bookmarks ">
-          <div>
-            <h3>Update Me</h3>
-          </div>
-        </a>
-        <a href="#" target="_blank"  class="flex-item-bookmarks ">
-          <div>
-            <h3>Update Me</h3>
-          </div>
-        </a>
-        <a href="#" target="_blank"  class="flex-item-bookmarks ">
-          <div>
-            <h3>Update Me</h3>
-          </div>
-        </a>
-        <a href="#" target="_blank"  class="flex-item-bookmarks ">
-          <div>
-            <h3>Update Me</h3>
-          </div>
-        </a>
-        <a href="#" target="_blank"  class="flex-item-bookmarks ">
-          <div>
-            <h3>Update Me</h3>
-          </div>
-        </a>
-      </div>
-    </section>
-        
-    <!-- contact section -->
-    <section class="page-section contact" id="contact">
-      <h2>/contact</h2>
-      <div>
-        <address>
-          <a href="mailto:jmbailey816@gmail.com">jmbailey816@gmail.com</a>
-          <a href="https://github.com/Jason-M-Bailey" target="_blank">GitHub</a>
-          <a href="https://www.linkedin.com/in/jason-bailey-80b88b16a/" target="_blank">LinkedIn</a>
-        </address>
-      </div>
-    </section>
-  </main>
-  <script src="assets/script.js"></script>
-</body>
+      <!-- projects section -->
+      <section class="page-section" id="projects">
+        <h2>/projects</h2>
+        <div class="flex-container">
+          
+          <a
+            href="https://jason-m-bailey.github.io/100daysofcssday18/"
+            target="_blank"
+            class="flex-item-projects css-18"
+          >
+            <div>
+              <h3>CSS Challenge - #18</h3>
+              <span>CSS/JS</span>
+            </div>
+          </a>
+          
+          <a
+            href="https://jason-m-bailey.github.io/javascript30-day06/"
+            target="_blank"
+            class="flex-item-projects js30-6"
+          >
+            <div>
+              <h3>JavaScript30 - #6</h3>
+              <span>JavaScript</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/100daysofcssday17/"
+            target="_blank"
+            class="flex-item-projects css-17"
+          >
+            <div>
+              <h3>CSS Challenge - #17</h3>
+              <span>CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/100daysofcssday17v2/"
+            target="_blank"
+            class="flex-item-projects css-17-v2"
+          >
+            <div>
+              <h3>CSS - #17 v2</h3>
+              <span>CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/javascript30-day05/"
+            target="_blank"
+            class="flex-item-projects js30-5"
+          >
+            <div>
+              <h3>JavaScript30 - #5</h3>
+              <span>JavaScript</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/100daysofcssday16/"
+            target="_blank"
+            class="flex-item-projects css-16"
+          >
+            <div>
+              <h3>CSS Challenge #16</h3>
+              <span>CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/codier-hover/"
+            target="_blank"
+            class="flex-item-projects codier-hover"
+          >
+            <div>
+              <h3>Codier Hover</h3>
+              <span>CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/100daysofcssday15/"
+            target="_blank"
+            class="flex-item-projects css-15"
+          >
+            <div>
+              <h3>CSS Challenge #15</h3>
+              <span>CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/javascript30-day03/"
+            target="_blank"
+            class="flex-item-projects js30-3"
+          >
+            <div>
+              <h3>JavaScript30 - #3</h3>
+              <span>JavaScript</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/javascript30-day02/"
+            target="_blank"
+            class="flex-item-projects js30-2"
+          >
+            <div>
+              <h3>JavaScript30 - #2</h3>
+              <span>JavaScript</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/javascript30-day01/"
+            target="_blank"
+            class="flex-item-projects js30-1"
+          >
+            <div>
+              <h3>JavaScript30 - #1</h3>
+              <span>JavaScript</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/100daysofcssday14/"
+            target="_blank"
+            class="flex-item-projects css-14"
+          >
+            <div>
+              <h3>CSS Challenge #14</h3>
+              <span>CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/100daysofcssday13/"
+            target="_blank"
+            class="flex-item-projects css-13"
+          >
+            <div>
+              <h3>CSS Challenge #13</h3>
+              <span>CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/glowinghover/"
+            target="_blank"
+            class="flex-item-projects glowing-hover"
+          >
+            <div>
+              <h3>Glowing Hover</h3>
+              <span>CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/100daysofcssday12/"
+            target="_blank"
+            class="flex-item-projects css-12"
+          >
+            <div>
+              <h3>CSS Challenge #12</h3>
+              <span>HTML/CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/100daysofcssday11/"
+            target="_blank"
+            class="flex-item-projects css-11"
+          >
+            <div>
+              <h3>CSS Challenge #11</h3>
+              <span>HTML/CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/100daysofcssday10/"
+            target="_blank"
+            class="flex-item-projects css-10"
+          >
+            <div>
+              <h3>CSS Challenge #10</h3>
+              <span>HTML/CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/100daysofcssday09/"
+            target="_blank"
+            class="flex-item-projects css-9"
+          >
+            <div>
+              <h3>CSS Challenge #9</h3>
+              <span>HTML/CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/100daysofcssday08/"
+            target="_blank"
+            class="flex-item-projects css-8"
+          >
+            <div>
+              <h3>CSS Challenge #8</h3>
+              <span>HTML/CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/100daysofcssday07/"
+            target="_blank"
+            class="flex-item-projects css-7"
+          >
+            <div>
+              <h3>CSS Challenge #7</h3>
+              <span>HTML/CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/100daysofcssday06/"
+            target="_blank"
+            class="flex-item-projects css-6"
+          >
+            <div>
+              <h3>CSS Challenge #6</h3>
+              <span>HTML/CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/100daysofcssday05/"
+            target="_blank"
+            class="flex-item-projects css-5"
+          >
+            <div>
+              <h3>CSS Challenge #5</h3>
+              <span>HTML/CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/100daysofcssday04/"
+            target="_blank"
+            class="flex-item-projects css-4"
+          >
+            <div>
+              <h3>CSS Challenge #4</h3>
+              <span>HTML/CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/100daysofcssday03/"
+            target="_blank"
+            class="flex-item-projects css-3"
+          >
+            <div>
+              <h3>CSS Challenge #3</h3>
+              <span>HTML/CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/100daysofcssday02/"
+            target="_blank"
+            class="flex-item-projects css-2"
+          >
+            <div>
+              <h3>CSS Challenge #2</h3>
+              <span>HTML/CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/100daysofcssday01/"
+            target="_blank"
+            class="flex-item-projects css-1"
+          >
+            <div>
+              <h3>CSS Challenge #1</h3>
+              <span>HTML/CSS</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- bootcamp section -->
+      <section class="page-section" id="bootcamp">
+        <h2>/bootcamp</h2>
+        <div class="flex-container">
+          <a
+            href="https://jason-m-bailey.github.io/dailyplanner/"
+            target="_blank"
+            class="flex-item-bootcamp dailyplanner"
+          >
+            <div>
+              <h3>Daily Planner</h3>
+              <span>JS/Moment</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/generaterandompassword/"
+            target="_blank"
+            class="flex-item-bootcamp generate-password-2"
+          >
+            <div>
+              <h3>Generate Password</h3>
+              <span>Javascript</span>
+            </div>
+          </a>
+
+          <a
+            href="https://jason-m-bailey.github.io/generatepassword/"
+            target="_blank"
+            class="flex-item-bootcamp generate-password"
+          >
+            <div>
+              <h3>Generate Password</h3>
+              <span>Javascript</span>
+            </div>
+          </a>
+          <a
+            href="https://jason-m-bailey.github.io/02weekminiproject/"
+            target="_blank"
+            class="flex-item-bootcamp css-snippets"
+          >
+            <div>
+              <h3>CSS Snippets</h3>
+              <span>HTML/CSS</span>
+            </div>
+          </a>
+          <a
+            href="https://jason-m-bailey.github.io/01Homework/"
+            target="_blank"
+            class="flex-item-bootcamp homework-01"
+          >
+            <div>
+              <h3>Code Refactor</h3>
+              <span>HTML/CSS</span>
+            </div>
+          </a>
+          <a
+            href="https://jason-m-bailey.github.io/JacobCollierFanSite/"
+            target="_blank"
+            class="flex-item-bootcamp jacob-collier"
+          >
+            <div>
+              <h3>Jacob Collier Project</h3>
+              <span>HTML/CSS</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Bookmarks section -->
+      <section class="page-section" id="bookmarks">
+        <h2>/bookmarks</h2>
+        <div class="flex-container">
+          <a
+            href="https://100dayscss.com/"
+            target="_blank"
+            class="flex-item-bookmarks days100"
+          >
+            <div>
+              <h3>100 Days of CSS</h3>
+            </div>
+          </a>
+          <a
+            href="https://getbootstrap.com/"
+            target="_blank"
+            class="flex-item-bookmarks bootstrap"
+          >
+            <div>
+              <h3>Bootstrap</h3>
+            </div>
+          </a>
+          <a
+            href="https://www.codecademy.com/"
+            target="_blank"
+            class="flex-item-bookmarks codecademy"
+          >
+            <div>
+              <h3>codecademy</h3>
+            </div>
+          </a>
+          <a
+            href="https://html-css-js.com/css/generator/border-outline/"
+            target="_blank"
+            class="flex-item-bookmarks css-border-generator"
+          >
+            <div>
+              <h3>CSS Border Generator</h3>
+            </div>
+          </a>
+          <a
+            href="https://css-tricks.com/"
+            target="_blank"
+            class="flex-item-bookmarks css-tricks"
+          >
+            <div>
+              <h3>CSS Tricks</h3>
+            </div>
+          </a>
+          <a
+            href="https://flatuicolors.com/"
+            target="_blank"
+            class="flex-item-bookmarks flat-ui"
+          >
+            <div>
+              <h3>Flat UI Palettes</h3>
+            </div>
+          </a>
+          <a
+            href="https://www.freecodecamp.org/learn"
+            target="_blank"
+            class="flex-item-bookmarks freecodecamp"
+          >
+            <div>
+              <h3>freeCodeCamp</h3>
+            </div>
+          </a>
+          <a
+            href="https://github.com/"
+            target="_blank"
+            class="flex-item-bookmarks github"
+          >
+            <div>
+              <h3>GitHub</h3>
+            </div>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCWv7vMbMWH4-V0ZXdmDpPBA"
+            target="_blank"
+            class="flex-item-bookmarks mosh"
+          >
+            <div>
+              <h3>Programming with Mosh</h3>
+            </div>
+          </a>
+          <a
+            href="https://stackoverflow.com/"
+            target="_blank"
+            class="flex-item-bookmarks stack-overflow"
+          >
+            <div>
+              <h3>Stack Overflow</h3>
+            </div>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA"
+            target="_blank"
+            class="flex-item-bookmarks traversy-media"
+          >
+            <div>
+              <h3>Traversy Media</h3>
+            </div>
+          </a>
+          <a
+            href="https://www.w3schools.com/"
+            target="_blank"
+            class="flex-item-bookmarks w3-schools"
+          >
+            <div>
+              <h3>W3 Schools</h3>
+            </div>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw"
+            target="_blank"
+            class="flex-item-bookmarks web-dev-simplified"
+          >
+            <div>
+              <h3>Web Dev Simplified</h3>
+            </div>
+          </a>
+          <a
+            href="https://codier.io/"
+            target="_blank"
+            class="flex-item-bookmarks"
+          >
+            <div>
+              <h3>Codier</h3>
+            </div>
+          </a>
+          <a
+            href="https://www.udemy.com/"
+            target="_blank"
+            class="flex-item-bookmarks"
+          >
+            <div>
+              <h3>Udemy</h3>
+            </div>
+          </a>
+          <a
+            href="https://www.google.com/search?q=rgb+color+picker&rlz=1C1VDKB_enUS932US932&oq=rgb&aqs=chrome.0.69i59j69i57j0i67i433j0j0i433j0i67j0i20i263i433j0i433.3024j0j7&sourceid=chrome&ie=UTF-8"
+            target="_blank"
+            class="flex-item-bookmarks"
+          >
+            <div>
+              <h3>Google RBG</h3>
+            </div>
+          </a>
+          <a
+            href="https://developer.chrome.com/"
+            target="_blank"
+            class="flex-item-bookmarks"
+          >
+            <div>
+              <h3>Chrome Developers</h3>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- contact section -->
+      <section class="page-section contact" id="contact">
+        <h2>/contact</h2>
+        <div>
+          <address>
+            <a href="mailto:jmbailey816@gmail.com">jmbailey816@gmail.com</a>
+            <a href="https://github.com/Jason-M-Bailey" target="_blank"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/jason-bailey-80b88b16a/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+    <script src="assets/script.js"></script>
+  </body>
 </html>
