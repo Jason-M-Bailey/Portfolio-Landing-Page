@@ -1,6 +1,6 @@
 # 02 Advanced CSS: Portfolio
 
-Deployed page: https://jason-m-bailey.github.io/Portfolio-Landing-Page/
+[Deployed page](https://jason-m-bailey.github.io/Portfolio-Landing-Page/)
 
 The assignment is to create a web application showing my porfolio, specifically including skills we have learned in the first 3 weeks of the bootcamp like flexbox, media queries and CSS variables. While an example was provided, the goal was to create a unique application. As you'll see from my deployed site, I have incorporated additional skills, such as: 
 
