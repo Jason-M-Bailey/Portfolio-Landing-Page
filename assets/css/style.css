@@ -419,6 +419,9 @@ main {
 .jacob-collier {
   background-image: url("../images/jacob-collier-wallpaper.jpg");
 }
+.javascriptquiz {
+  background-image: url("../images/javascriptquiz.jpg")
+}
 .js30-1 {
   background-image: url("../images/js30-1.jpg");
 }
@@ -442,6 +445,12 @@ main {
 }
 .nbaplayersearch {
   background-image: url("../images/nbaplayersearch.jpg");
+}
+.nodejs {
+  background-image: url("../images/nodejs.jpg")
+}
+.noteapp {
+  background-image: url("../images/noteapp.jpg")
 }
 .stack-overflow {
   background-image: url("../images/stack-overflow.jpg");
