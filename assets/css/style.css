@@ -431,6 +431,11 @@ main {
 .mosh {
   background-image: url("../images/programming-with-mosh.jpg");
 }
+
+.gitshare {
+  background-image: url("../images/gitshare.jpg")
+}
+
 .nbaplayersearch {
   background-image: url("../images/nbaplayersearch.jpg")
 }
