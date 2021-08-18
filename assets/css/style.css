@@ -46,7 +46,7 @@ h6 {
 /* is there a way to make all a href tags use target:"_blank" */
 
 body {
-  font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+  font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
   color: var(--primary);
   background-color: var(--light);
   line-height: 1.5;
@@ -354,7 +354,7 @@ main {
   background-image: url("../images/css-challenge-14.jpg");
 }
 .css-15 {
-  background-image: url("../images/css-15.gif") ;
+  background-image: url("../images/css-15.gif");
 }
 .css-16 {
   background-image: url("../images/css-16.jpg");
@@ -372,7 +372,7 @@ main {
   background-image: url("../images/css-19.gif");
 }
 .css-20 {
-  background-image: url("../images/css-20.jpg")
+  background-image: url("../images/css-20.jpg");
 }
 .css-border-generator {
   background-image: url("../images/css-border-generator.jpg");
@@ -389,6 +389,12 @@ main {
 .days100 {
   background-image: url("../images/100-days-of-css.jpg");
 }
+.ecommerce {
+  background-image: url("../images/ecommerce.jpg")
+}
+.employeetracker {
+  background-image: url("../images/employeetracker.jpg")
+}
 .flat-ui {
   background-image: url("../images/flat-ui.jpg");
 }
@@ -396,7 +402,7 @@ main {
   background-image: url("../images/freecodecamp.png");
 }
 .generate-password {
-  background-image: url('../images/generate-password.jpg');
+  background-image: url("../images/generate-password.jpg");
 }
 .generate-password-2 {
   background-image: url("../images/generate-password-2.jpg");
@@ -431,16 +437,17 @@ main {
 .mosh {
   background-image: url("../images/programming-with-mosh.jpg");
 }
-
 .gitshare {
-  background-image: url("../images/gitshare.jpg")
+  background-image: url("../images/gitshare.jpg");
 }
-
 .nbaplayersearch {
-  background-image: url("../images/nbaplayersearch.jpg")
+  background-image: url("../images/nbaplayersearch.jpg");
 }
 .stack-overflow {
   background-image: url("../images/stack-overflow.jpg");
+}
+.teamprofilegenerator {
+  background-image: url("../images/teamprofilegenerator.jpg")
 }
 .traversy-media {
   background-image: url("../images/traversy-media.jpg");
@@ -492,7 +499,8 @@ main {
   .flex-item-projects {
     flex-basis: calc(50% - 1em);
   }
-  .flex-item-projects:first-child, .flex-item-projects:last-child {
+  .flex-item-projects:first-child,
+  .flex-item-projects:last-child {
     min-height: 300px;
     flex-basis: 100%;
   }
